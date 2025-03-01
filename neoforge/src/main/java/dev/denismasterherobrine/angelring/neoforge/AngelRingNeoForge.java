@@ -1,5 +1,6 @@
 package dev.denismasterherobrine.angelring.neoforge;
 
+import dev.denismasterherobrine.angelring.neoforge.registry_neoforge.AngelRingRegistryNeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
@@ -10,7 +11,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 public final class AngelRingNeoForge {
     public AngelRingNeoForge(IEventBus eventBus) {
         eventBus.addListener(AngelRingNeoForge::setup);
-//        AngelRingRegistryNeoForge.register(eventBus);
+        AngelRingRegistryNeoForge.register(eventBus);
     }
 
     private static void setup(final FMLCommonSetupEvent event) {
